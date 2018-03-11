@@ -14,5 +14,17 @@ for (var i = 0; i < topics.length; i++){
 $("#buttons-target").append(buttonDiv);
 
 $(document).on("click", ".gif-button", function(){
-    alert("button clicked");
+    var baseURL = "https://api.giphy.com/v1/gifs/search";//giphy search API endpoint
+    var params = $.param({
+        api_key: "fuu2Wu6FmADeffdF7V1cHgBhCBw2VBQA",
+        q : $(this).text(),
+        limit : 10,
+    });
+    var queryURL = `${baseURL}?${params}`;
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function(response){
+        console.log(response);
+    });
 });

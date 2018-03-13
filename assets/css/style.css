@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+}
+
+#gif-target {
+    
+}
+
+.gif-container {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+    
+}
+
+button {
+    margin: 10px 5px 10px 5px;
+}
+
+.navbar {
+    background-color: white;
+    margin-bottom: 0px;
+    border-bottom: 2px solid skyblue;
+}
+
+.navbar-brand {
+    font-family: "Monoton", cursive;
+    font-size: 35px;
+    line-height: 35px;
+}
